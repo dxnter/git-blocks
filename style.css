@@ -1,0 +1,125 @@
+body {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+}
+#content {
+    display: grid;
+    background-color: rgb(251, 230, 145);
+    grid-template-columns: repeat(12, 1fr);
+    border: 15px solid rgb(221, 223, 212);
+    grid-gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-areas:
+    "header header header header header header header header header header header header"
+    "aside aside aside aside main main main main main main main main"
+    "aside aside aside aside main main main main main main main main"
+    "aside aside aside aside main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer"
+
+}
+.highlighted-text {
+    color: rgb(125, 255, 240);
+}
+header {
+    grid-area: header;
+    background-color: rgb(56, 176, 173);
+    border-bottom: 15px solid rgb(221, 223, 212);
+
+}
+img {
+    width: 50px;
+    mix-blend-mode: multiply;
+    padding: 5px 0px 0px 3px;
+    position: absolute;
+}
+#git-basics-title {
+    font-size: 40px;
+    color: black;
+    margin: 0px 100px 0px 55px;
+}
+.header-text {
+    display: inline-block;
+    margin-top: 8px;
+}
+p {
+    display: inline-block;
+}
+a {
+    color: white;
+    padding: 0px 5px;
+} 
+main {
+    grid-area: main;
+}
+
+.main-header-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    margin: 0px 10px 15px 15px;
+}
+.main-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.main-content {
+    width: 260px;
+    padding: 10px;
+    margin: 15px 15px 15px 15px;
+    background-color: rgb(21, 63, 67);
+}
+.main-content p:nth-child(2) {
+    margin-left: 10px;
+}
+.main-footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(21, 63, 67);
+    margin-top: 15px;
+    margin-right: 35px;
+    margin-left: 15px;
+}
+.footer-content {
+    padding: 10px;
+    background-color: rgb(21, 63, 67);
+}
+.footer-content p:nth-child(2) {
+    margin-left: 10px;
+}
+
+.content-header {
+    margin: 0px;
+    font-size: 28px;
+}
+.header-content {
+    width: 166px;
+    padding: 10px;
+    background-color: rgb(21, 63, 67);
+}
+.header-content p:nth-child(2) {
+    padding-left: 10px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(21, 63, 67);
+    margin: 0px 15px 0px 15px;
+}
+
+.aside-content {
+    padding: 15px;
+}
+.aside-content p:nth-child(2) {
+    margin-left: 10px;
+}
+footer {
+    grid-area: footer;
+    background-color: rgb(56, 176, 173);
+    border-top: 15px solid rgb(221, 223, 212);
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 0px;
+}
